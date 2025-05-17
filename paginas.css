@@ -1,0 +1,126 @@
+/* Reset básico para evitar conflitos de estilo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9; /* Cor de fundo suave */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ff66b2; /* Cor de fundo rosa vibrante */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+/* Navegação */
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: #000;
+    margin-top: 10px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #ff99cc; /* Cor rosa mais suave ao passar o mouse */
+}
+
+/* Seção geral */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Centralização da seção de agendamento */
+.agendamento-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Títulos e Descrições */
+h2, h3 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+/* Descrição e Benefícios */
+.descricao, .beneficios-titulo {
+    margin-bottom: 20px;
+}
+
+.beneficios-lista {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.beneficios-lista li {
+    padding-left: 20px;
+    background: url('checkmark.png') no-repeat left center;
+    margin-bottom: 5px;
+}
+
+/* Botões */
+.btn-agendar {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #25D366; /* Verde do WhatsApp */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+.btn-agendar:hover {
+    background-color: #128C7E; /* Tom mais escuro de verde do WhatsApp */
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .btn-agendar {
+        width: 100%;
+        padding: 15px 0;
+        font-size: 1.2em;
+    }
+}

@@ -1,0 +1,357 @@
+/* Resetando alguns estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container centralizado para todo o conteúdo */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ff3399; /* Cor rosa mais viva */
+    color: white;
+    padding: 1px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-family: 'Verdana', sans-serif;
+}
+
+/* Navegação */
+nav ul {
+    list-style: none;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: #ff66b2; /* Cor rosa mais suave para o hover */
+}
+
+/* Seções */
+.section {
+    padding: 50px 0;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #ff3399; /* Cor rosa mais viva */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Sobre */
+#sobre {
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sobre .container {
+    width: 100%;
+    max-width: 12px;
+    margin: 0 auto;
+}
+
+#sobre h5 {
+    font-size: 5PX;
+    color: #ff3399; /* Cor rosa mais viva */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.1px;
+}
+
+#sobre p {
+    font-size: 15px;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #sobre h2 {
+        font-size: 2rem;
+    }
+
+    #sobre p {
+        font-size: 1rem;
+    }
+}
+
+/* Lista de Serviços */
+#servicos ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#servicos ul li {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+#servicos ul li a {
+    text-decoration: none;
+    color: #ff3399; /* Cor rosa mais viva */
+    font-size: 1.25rem;
+    font-weight: bold;
+    display: block;
+}
+
+#servicos ul li a:hover {
+    color: #ff66b2; /* Cor rosa mais suave para o hover */
+}
+
+/* Contato */
+#contato p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#contato a {
+    color: #fd61ce;
+    text-decoration: none;
+}
+
+#contato a:hover {
+    color: #a099ff;
+}
+
+/* Rodapé */
+footer {
+    background-color: #ff3399; /* Cor rosa mais viva */
+    color: white;
+    padding: 0.5cm 0; /* Diminuindo o padding para deixar o footer menor */
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 10px;
+    margin: 0;
+}
+
+/* Estilo do botão de agendamento */
+.btn-agendar {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #25D366; /* Cor principal do WhatsApp */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    width: auto;
+}
+
+.btn-agendar:hover {
+    background-color: #128C7E;
+    transform: translateY(-3px);
+}
+
+.btn-agendar:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.6);
+}
+
+.btn-agendar:active {
+    transform: translateY(1px);
+}
+
+/* Seção de Agendamento */
+#agendamento {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+#agendamento .container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#agendamento h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#agendamento p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Estilo da seção de Nail Design */
+#nail-design {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+#nail-design .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#nail-design h2 {
+    font-size: 2.5rem;
+    color: #ff3399; /* Cor rosa mais viva */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#nail-design .descricao {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+#nail-design .beneficios-titulo {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#nail-design .beneficios-lista {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+#nail-design .beneficios-lista li {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    display: flex;
+    align-items: center;
+}
+
+#nail-design .beneficios-lista li::before {
+    content: "✔";
+    color: #ff3399; /* Cor rosa mais viva */
+    margin-right: 10px;
+}
+
+#nail-design .chamada {
+    font-size: 1.3rem;
+    color: #ff3399; /* Cor rosa mais viva */
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#nail-design .voltar-inicio {
+    display: inline-block;
+    background-color: #ff3399; /* Cor rosa mais viva */
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+}
+
+#nail-design .voltar-inicio:hover {
+    background-color: #ff3385;
+}
+
+/* Estilos para o link de voltar à página inicial */
+.voltar-inicio {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f4a7d6;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+    font-size: 10px;
+}
+
+.voltar-inicio:hover {
+    background-color: #d87bb4;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #servicos ul li {
+        width: 45%;
+    }
+
+    #nail-design h2 {
+        font-size: 2rem;
+    }
+
+    #nail-design .descricao,
+    #nail-design .beneficios-titulo,
+    #nail-design .chamada {
+        font-size: 1rem;
+    }
+
+    #nail-design .beneficios-lista li {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #servicos ul li {
+        width: 100%;
+    }
+}
